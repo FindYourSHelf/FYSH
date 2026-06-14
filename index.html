@@ -223,12 +223,21 @@ input {
 #modalSummary {
     color: #333;
     line-height: 1.6;
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
 }
 /* MOBILE */
 @media (max-width: 768px) {
-  .logo {
-    width: 70px;
+
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
+
 }
 
   header h1 {
